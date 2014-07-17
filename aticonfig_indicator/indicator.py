@@ -6,14 +6,14 @@ import appindicator
 import utils
 
 
-class CheckTemp:
+class AticonfigIndicator(object):
     def __init__(self):
-        self.ind = appindicator.Indicator("ATIConfig Temp Status", "remmina-pin-up",
+        self.ind = appindicator.Indicator("aticonfig-indicator", "aticonfig-icon",
                                           appindicator.CATEGORY_APPLICATION_STATUS)
         self.ind.set_status(appindicator.STATUS_ACTIVE)
 
-        #self.ind.set_attention_icon("ubuntu-client-error")
-        self.ind.set_label("FooBar")
+        # self.ind.set_attention_icon("ubuntu-client-error")
+        #self.ind.set_label("FooBar")
         # self.ind.set_icon()
 
         self.menu_setup()
@@ -46,12 +46,3 @@ class CheckTemp:
         self.ind.set_label(r)
 
         return True
-
-
-def main():
-    indicator = CheckTemp()
-    indicator.main()
-
-
-if __name__ == "__main__":
-    main()
