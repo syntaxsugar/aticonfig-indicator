@@ -1,8 +1,10 @@
 from setuptools import setup, find_packages
 import glob
 
+from aticonfig_indicator import __version__
+
 setup(name='aticonfig-indicator',
-      version='0.2',
+      version=__version__,
       description='Aticonfig Temp Indicator on Unity desktop.',
       long_description=open('README.rst').read(),
       url='https://github.com/syntaxsugar/aticonfig-indicator',
