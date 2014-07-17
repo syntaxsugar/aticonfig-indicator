@@ -2,10 +2,10 @@ from setuptools import setup, find_packages
 import glob
 
 setup(name='aticonfig-indicator',
-      version='0.1dev',
+      version='0.2',
       description='Aticonfig Temp Indicator on Unity desktop.',
       long_description=open('README.rst').read(),
-      url='.',
+      url='https://github.com/syntaxsugar/aticonfig-indicator',
       license='BSD',
       platforms=['Ubuntu'],
       author='Jaromir Fojtu',
